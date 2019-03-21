@@ -1,3 +1,58 @@
+:root {
+    font-family: sans-serif;
+    box-sizing: border-box;
+
+}
 body {
-    background:grey;
+    width:100vw;
+    /* background:#E1D6C8; */
+}
+header {
+    border-bottom:1px solid lightgrey;    
+}
+
+.nav {
+    
+    display:flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    width:90%;
+}
+.nav ol {
+    display: flex;
+    list-style: none;
+    
+}
+.nav ol li {
+    margin: 0 0.7em;
+}
+
+/*COURSE CARDS*/
+.courses {
+    margin:3em auto;
+    width:90%;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+}
+.course-card {
+    width:250px;
+    height:auto;
+    border: 1px solid grey;
+    border-radius: 5px;
+    /* padding: 0.5em; */
+    margin:1em 0.3em;
+
+}
+.course-card img {
+    width: 100%;
+}
+.progress-bar {
+    width: 75%;
+    height:5px;
+    background-color: red;
+
+}
+.course-card-info {
+    padding: 0 1em;
 }

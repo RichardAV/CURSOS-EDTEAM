@@ -1,39 +1,110 @@
 :root {
     font-family: sans-serif;
     box-sizing: border-box;
+    margin:0;
+    padding:0;
 
 }
 body {
-    width:100vw;
+    width:100%;
+    margin:0;
+    padding:0;
     /* background:#E1D6C8; */
 }
+
+/*** INICIO ESTILOS PARA PC ***/
+
+/* INICIO DEL HEADER */
+
 header {
     border-bottom:1px solid lightgrey;    
 }
-
-.nav {
-    
+.nav {    
     display:flex;
     justify-content: space-between;
     margin: 0 auto;
     width:90%;
 }
+.logo-menu {
+    width: 100px;
+    margin-right: 1em;
+}
 .nav ol {
     display: flex;
-    list-style: none;
-    
+    align-items: center;
+    list-style-type: none;
+    padding:0;
+    margin:0;
 }
 .nav ol li {
     margin: 0 0.7em;
 }
+.notification-bel {
+    width: 25px;
+}
+.avatar {
+    width:70px;
+    border-radius: 50%;
+}
+/* FIN DEL HEADER */
 
-/*COURSE CARDS*/
+/*INICIO CATEGORIAS*/
+.categorias {
+    margin:0 auto;
+    
+    width: 90%;
+}
+.categorias ul {
+    
+    display:flex;
+    justify-content:center;
+    list-style-type: none;
+    padding:0;
+}
+.categorias ul li {
+    display:block;
+    
+}
+.categorias-items a {
+    display:block;
+    padding: 0.5em 0em;
+    color:black;
+    text-decoration:none;
+    margin: 0.5em 1em;
+        
+}
+.categorias-items:nth-child(1) {
+    border-bottom: 3px solid red;
+}
+.categorias-items:hover {
+    border-bottom: 3px solid yellow;
+    
+}
+/* FIN CATEGORIAS*/
+
+/* INICIO DE FILTROS */
+.filtros {
+    width:70%;
+    margin:0 auto;
+}
+.contenedor-selector {
+    display:flex;
+    align-items: center;
+    justify-content:flex-start;
+}
+.courses-order {
+    margin: 0 1em;
+}
+
+/* FIN DE FILTROS */
+
+/*INICION COURSE CARDS*/
 .courses {
-    margin:3em auto;
-    width:90%;
+    margin:1em auto;
+    width:80%;
     display:flex;
     flex-wrap:wrap;
-    justify-content: center;
+    justify-content: flex-start;
 }
 .course-card {
     width:250px;
@@ -42,17 +113,85 @@ header {
     border-radius: 5px;
     /* padding: 0.5em; */
     margin:1em 0.3em;
-
+}
+.course-card:hover {
+    pointer-events: visible;
+    box-shadow: 5px 5px lightgrey;
 }
 .course-card img {
     width: 100%;
 }
+.course-card img:hover {
+    filter: brightness(50%);
+}
+.progress-bar-bkg {
+    width: 100%;
+    height:10px;
+    background-color: grey;
+    border-radius: 10px;
+}
+.progress-bar,
+.progress-bar-50,
+.progress-bar-5,
+.progress-bar-40
+ {
+    height:10px;
+    background-color: orange;
+    border-radius: 5px 0px 0px 5px;
+}
 .progress-bar {
     width: 75%;
-    height:5px;
-    background-color: red;
-
+ }
+.progress-bar-50 {
+    width: 50%;
+}
+.progress-bar-5 {
+    width: 5%;
+    
+}
+.progress-bar-40 {
+    width: 40%;
 }
 .course-card-info {
     padding: 0 1em;
+}
+
+/*FIN COURSE CARDS*/
+
+/*** FIN ESTILOS PARA PC ***/
+
+/*** INIICIO ESTILOS PARA MOBILE ***/
+
+@media only screen and (max-width: 580px) {
+    body {
+        background-color: khaki;
+    }
+    .contenedor-selector {
+        flex-direction: column;
+        /* background:blue; */
+    }
+    .categorias {
+        width: 100%;
+    }
+    .categoria > div {
+        margin:0 auto;
+    }
+    .categorias ul {
+        margin:0 auto;
+        flex-direction: column;
+        width:50%;
+        padding: 0;
+        /* margin: 0; */
+    }
+    .categorias-items {
+        text-align:center;
+    }
+    .courses {
+        margin:0 0;
+        width:80%;
+        justify-content: center;
+    }
+    .filtros {
+        width: 100%;
+    }
 }

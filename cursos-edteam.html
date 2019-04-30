@@ -8,10 +8,11 @@
     <title>Cursos EDTeam</title>
 </head>
 <body>
+    <!-- HEADER -->
     <header>
         <nav class="nav">
             <ol>
-                <li>Logo</li>
+                <li><img class="logo-menu" src="/IMG/EDteam-logo.png"></li>
                 <li><a>Cursos</a></li>
                 <li><a>Especialidades</a></li>
                 <li><a>Blog</a></li>
@@ -19,49 +20,102 @@
             </ol>
             <ol>
                 <li><a>Carrito</a></li>
-                <li><a>Mundo</a></li>
-                <li><a>Bell</a></li>
-                <li><a>Avatar</a></li>
+                <li><a><img class="mundo" src="IMG/mundo.png"></a></li>
+                <li><a><img class="notification-bel" src="https://ed.team/static/images/icons/notification.svg"></a></li>
+                <li><a><img class="avatar" src="IMG/richardavcl_logo_av-yellow.png"></a></li>
             </ol>
         </nav>
     </header>
-    <section class="courses">
-        <div class="course-card">
-            <img src="IMG/javascript_0.jpg">
-            <div class="course-card-info">
-                <h3>JavaScript Desde Cero (2018)</h3>
-                <p>Profesor: Luis Machado</p>
-                <div class="progress-bar"></div>
-                <p>75% Completado</p>
+    <!-- FIN DEL HEADER -->
+
+    <!-- INICIO DEL MAIN -->
+
+        <!-- INICIO SECCIÓN CATEGORIAS -->
+        <section class="categorias">
+            <div>
+                <ul>
+                    <li class="categorias-items"><a href="#">En curso</a></li>
+                    <li class="categorias-items"><a href="#">Completados</a><li>
+                    <li class="categorias-items"><a href="#">Archivados</a></li>
+                </ul>
             </div>
-        </div>
-        <div class="course-card">
-            <img src="IMG/java-EE.jpg">
-            <div class="course-card-info">
-                <h3>Java Enterprise Edition (Java EE)</h3>
-                <p>José Dimas Luján</p>
-                <div class="progress-bar"></div>
-                <p>75% Completado</p>
+        </section>
+        <!-- FIN SECCIÓN CATEGORIAS -->
+
+        <!-- INICIO SECCIÓN FILTROS -->
+        <section class="filtros">
+            <div class="contenedor-selector">
+                <p>Filtrar por</p>
+                <select class="courses-order" name=""">
+                    <option value="mas-reciente">Más reciente</option>
+                    <option value="más-antiguo">Más antiguo</option>
+                    <option value="mayor-progreso">Mayor progreso</option>
+                    <option value="menor-progreso">Menor progreso</option>
+                </select>
             </div>
-        </div>
-        <div class="course-card">
-            <img src="IMG/wp-theming-i_0.jpg">
-            <div class="course-card-info">
-                <h3>Creación de temas en Wordpress I</h3>
-                <p>Jonathan MirCha</p>
-                <div class="progress-bar"></div>
-                <p>5% Completado</p>
+        </section>
+        <!-- FIN DE SECCIÓN FILTROS -->
+
+        <!-- INICIO DE SECCIÓN CURSOS -->
+        <section class="courses">
+            <div class="course-card">
+                <a href="#"><img src="IMG/javascript_0.jpg"></a>
+                <div class="course-card-info">
+                    <h3>JavaScript Desde Cero (2018)</h3>
+                    <p>Profesor: Luis Machado</p>
+                    <div class="progress-bar-bkg">
+                        <div class="progress-bar"></div>
+                    </div>
+                    <p>75% Completado</p>
+                </div>
             </div>
-        </div>
-        <div class="course-card">
-            <img src="IMG/Android Kotlin.png">
-            <div class="course-card-info">
-                <h3>Android con Kotlin</h3>
-                <p>José Dimas Luján</p>
-                <div class="progress-bar"></div>
-                <p>40% Completado</p>
+            <div class="course-card">
+                <a href="#"><img src="IMG/java-EE.jpg"></a>
+                <div class="course-card-info">
+                    <h3>Java Enterprise Edition (Java EE)</h3>
+                    <p>José Dimas Luján</p>
+                    <div class="progress-bar-bkg">
+                        <div class="progress-bar-50"></div>
+                    </div>
+                    <p>50% Completado</p>
+                </div>
             </div>
-        </div>
-    </section>
+            <div class="course-card">
+                <a href="#"><img src="IMG/wp-theming-i_0.jpg"></a>
+                <div class="course-card-info">
+                    <h3>Creación de temas en Wordpress I</h3>
+                    <p>Jonathan MirCha</p>
+                    <div class="progress-bar-bkg">
+                        <div class="progress-bar-5"></div>
+                    </div>
+                    <p>5% Completado</p>
+                </div>
+            </div>
+            <div class="course-card">
+                <a href="#"><img src="IMG/Android Kotlin.png"></a>
+                <div class="course-card-info">
+                    <h3>Android con Kotlin</h3>
+                    <p>José Dimas Luján</p>
+                    <div class="progress-bar-bkg">
+                        <div class="progress-bar-40"></div>
+                    </div>
+                    <p>40% Completado</p>
+                </div>
+            </div>
+            <div class="course-card">
+                <a href="#"><img src="IMG/java-EE.jpg"></a>
+                <div class="course-card-info">
+                    <h3>Java Enterprise Edition (Java EE)</h3>
+                    <p>José Dimas Luján</p>
+                    <div class="progress-bar-bkg">
+                        <div class="progress-bar-50"></div>
+                    </div>
+                    <p>50% Completado</p>
+                </div>
+            </div>
+        </section>
+        <!-- FIN DE SECCIÓN CURSOS -->
+
+    <!-- FIN DEL MAIN -->
 </body>
 </html>
